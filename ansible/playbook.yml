@@ -1,0 +1,39 @@
+---
+- name: Deploy Docker Website
+  hosts: web
+  become: yes
+
+  tasks:
+
+    - name: Install Docker
+      apt:
+        name: docker.io
+        state: present
+        update_cache: yes
+
+    - name: Start Docker
+      service:
+        name: docker
+        state: started
+        enabled: yes
+
+    - name: Pull nginx image
+      community.docker.docker_image:
+        name: nginx
+        source: pull
+
+    - name: Copy index.html
+      copy:
+        src: ../index.html
+        dest: /home/ubuntu/index.html
+
+    - name: Remove old container
+      shell: docker rm -f web || true
+
+    - name: Run nginx container
+      shell: |
+        docker run -d \
+        --name web \
+        -p 80:80 \
+        -v /home/ubuntu/index.html:/usr/share/nginx/html/index.html \
+        nginx

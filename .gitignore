@@ -1,3 +1,10 @@
+<<<<<<< HEAD
 .DS_Store
 Thumbs.db
 *.log
+=======
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+>>>>>>> 7d454c8f8d172be97ebd33984fa8dc8383886805

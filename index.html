@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AMANN PRAKASH — DevOps Engineer, Cloud Enthusiast, and Computer Science graduate. Portfolio showcasing CI/CD, Docker, Kubernetes, AWS, and Linux.">
+  <meta name="author" content="AMANN PRAKASH">
+  <title>AMANN PRAKASH | DevOps Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <div class="loader-ring"></div>
+      <div class="loader-ring loader-ring-2"></div>
+      <p class="loader-text"><span class="gradient-text">AMANN PRAKASH</span></p>
+      <p class="loader-sub">Initializing portfolio...</p>
+    </div>
+  </div>
+
+  <!-- Cursor Effects -->
+  <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+  <canvas class="cursor-trail" id="cursor-trail" aria-hidden="true"></canvas>
+
+  <!-- Background -->
+  <div class="bg-layer" aria-hidden="true">
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+    <canvas id="particles"></canvas>
+    <div class="floating-icons">
+      <span class="float-icon" style="--i:0">⬡</span>
+      <span class="float-icon" style="--i:1">{ }</span>
+      <span class="float-icon" style="--i:2">▲</span>
+      <span class="float-icon" style="--i:3">◇</span>
+      <span class="float-icon" style="--i:4">λ</span>
+      <span class="float-icon" style="--i:5">⚙</span>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#home" class="nav-logo magnetic" data-strength="0.25">
+        <span class="logo-dot"></span>
+        AMANN PRAKASH<span class="logo-accent">.</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+        <span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link nav-cta magnetic" data-strength="0.3">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero section">
+      <div class="container hero-centered">
+        <p class="eyebrow hero-eyebrow" data-aos="fade-up" data-aos-delay="100">Available for opportunities</p>
+        <h1 class="hero-title">
+          <span class="hero-line" data-aos="fade-up" data-aos-delay="200">Hi, I'm</span>
+          <span
+  class="hero-name block text-[clamp(2.5rem,8vw,4.75rem)] font-bold tracking-[0.08em] text-white"
+>
+  AMANN PRAKASH
+</span>
+        </h1>
+        <p class="hero-subtitle" id="typing-text" aria-live="polite"></p>
+        <p class="hero-desc" data-aos="fade-up" data-aos-delay="600">
+          I am a passionate Computer Science graduate and aspiring DevOps Engineer. As a fresher,
+          I enjoy building cloud infrastructure, automating deployments, containerizing applications,
+          and continuously learning modern DevOps practices. I am eager to contribute, solve real-world
+          problems, and grow as an engineer.
+        </p>
+        <div class="hero-actions" data-aos="fade-up" data-aos-delay="750">
+          <a href="#contact" class="btn btn-primary magnetic glow-btn" data-strength="0.35">Contact Me</a>
+          <a href="#projects" class="btn btn-outline magnetic" data-strength="0.35">View Projects</a>
+        </div>
+        <div class="hero-stats glass-card" data-aos="fade-up" data-aos-delay="900">
+          <div class="stat">
+            <span class="stat-num counter" data-target="5">0</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num counter" data-target="12">0</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num counter" data-target="2">0</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to about">
+        <span class="scroll-line"></span>
+      </a>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="section-tag">01 — About</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        </div>
+        <div class="about-content glass-card" data-aos="fade-up" data-aos-duration="800">
+          <p>
+            I am a Computer Science Engineering graduate passionate about DevOps, Cloud Computing,
+            Linux, Networking, and Automation. As a fresher, I have built hands-on projects using
+            Docker, Jenkins, Kubernetes, GitHub Actions, AWS EC2, Nginx, and Terraform.
+          </p>
+          <p>
+            I enjoy learning modern technologies and continuously improving my technical skills.
+          </p>
+          <div class="about-tags">
+            <span>DevOps</span>
+            <span>Cloud</span>
+            <span>Linux</span>
+            <span>Automation</span>
+            <span>IaC</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section-dark">
+      <div class="container">
+        <div class="section-head center" data-aos="fade-up">
+          <span class="section-tag">02 — Skills</span>
+          <h2 class="section-title">Technical <span class="gradient-text">Arsenal</span></h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card glass-card gradient-border glow-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="skill-icon">⌨</div>
+            <h3>Programming</h3>
+            <div class="skill-tags">
+              <span>Python</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bash</span>
+            </div>
+          </article>
+          <article class="skill-card glass-card gradient-border glow-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-icon">⚙</div>
+            <h3>DevOps</h3>
+            <div class="skill-tags">
+              <span>Docker</span><span>Kubernetes</span><span>Jenkins</span><span>GitHub Actions</span><span>Terraform</span><span>Ansible</span>
+            </div>
+          </article>
+          <article class="skill-card glass-card gradient-border glow-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-icon">☁</div>
+            <h3>Cloud</h3>
+            <div class="skill-tags">
+              <span>AWS</span><span>EC2</span><span>IAM</span><span>S3</span><span>VPC</span>
+            </div>
+          </article>
+          <article class="skill-card glass-card gradient-border glow-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-icon">🐧</div>
+            <h3>Operating Systems</h3>
+            <div class="skill-tags">
+              <span>Linux</span><span>Ubuntu</span><span>Red Hat</span>
+            </div>
+          </article>
+          <article class="skill-card glass-card gradient-border glow-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-icon">🔗</div>
+            <h3>Networking</h3>
+            <div class="skill-tags">
+              <span>CCNA</span><span>TCP/IP</span><span>Routing</span><span>Switching</span><span>VLAN</span><span>DNS</span><span>DHCP</span>
+            </div>
+          </article>
+          <article class="skill-card glass-card gradient-border glow-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="skill-icon">⎇</div>
+            <h3>Version Control</h3>
+            <div class="skill-tags">
+              <span>Git</span><span>GitHub</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-head" data-aos="fade-up">
+          <span class="section-tag">03 — Experience</span>
+          <h2 class="section-title">My <span class="gradient-text">Journey</span></h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-line"></div>
+          <article class="timeline-card glass-card gradient-border" data-aos="fade-up">
+            <div class="timeline-dot"></div>
+            <div class="timeline-badge">Fresher</div>
+            <h3>Aspiring DevOps Engineer</h3>
+            <ul class="timeline-list">
+              <li>Built CI/CD pipelines using Jenkins</li>
+              <li>Containerized applications with Docker</li>
+              <li>Worked with Kubernetes deployments</li>
+              <li>Managed AWS EC2 infrastructure</li>
+              <li>Automated deployments</li>
+              <li>Hands-on Linux administration</li>
+              <li>Networking knowledge from CCNA</li>
+              <li>Passionate about Infrastructure as Code</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section section-dark">
+      <div class="container">
+        <div class="section-head center" data-aos="fade-up">
+          <span class="section-tag">04 — Projects</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Work</span></h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card glass-card gradient-border" data-aos="zoom-in" data-aos-delay="0">
+            <span class="project-num">01</span>
+            <div class="project-icon">⚡</div>
+            <h3>CI/CD Pipeline using Jenkins</h3>
+            <p>Automated build, test, and deploy workflow with Jenkins for continuous delivery.</p>
+            <div class="project-stack"><span>Jenkins</span><span>Git</span><span>Docker</span></div>
+            <a href="#" class="project-link magnetic" data-strength="0.2">View details →</a>
+          </article>
+          <article class="project-card glass-card gradient-border" data-aos="zoom-in" data-aos-delay="100">
+            <span class="project-num">02</span>
+            <div class="project-icon">🐳</div>
+            <h3>Dockerized Nginx Website</h3>
+            <p>Containerized web application with Nginx, optimized for production deployment.</p>
+            <div class="project-stack"><span>Docker</span><span>Nginx</span><span>Linux</span></div>
+            <a href="#" class="project-link magnetic" data-strength="0.2">View details →</a>
+          </article>
+          <article class="project-card glass-card gradient-border" data-aos="zoom-in" data-aos-delay="200">
+            <span class="project-num">03</span>
+            <div class="project-icon">☁</div>
+            <h3>AWS EC2 Deployment</h3>
+            <p>Cloud infrastructure setup on AWS EC2 with security groups and IAM policies.</p>
+            <div class="project-stack"><span>AWS</span><span>EC2</span><span>IAM</span></div>
+            <a href="#" class="project-link magnetic" data-strength="0.2">View details →</a>
+          </article>
+          <article class="project-card glass-card gradient-border" data-aos="zoom-in" data-aos-delay="300">
+            <span class="project-num">04</span>
+            <div class="project-icon">☸</div>
+            <h3>Kubernetes Application Deployment</h3>
+            <p>Deployed scalable microservices on Kubernetes with health checks and rolling updates.</p>
+            <div class="project-stack"><span>K8s</span><span>Docker</span><span>YAML</span></div>
+            <a href="#" class="project-link magnetic" data-strength="0.2">View details →</a>
+          </article>
+          <article class="project-card glass-card gradient-border" data-aos="zoom-in" data-aos-delay="400">
+            <span class="project-num">05</span>
+            <div class="project-icon">🖥</div>
+            <h3>Linux Server Administration</h3>
+            <p>Configured and maintained Linux servers with user management, services, and monitoring.</p>
+            <div class="project-stack"><span>Linux</span><span>Bash</span><span>SSH</span></div>
+            <a href="#" class="project-link magnetic" data-strength="0.2">View details →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="edu-grid">
+          <div class="edu-block" data-aos="fade-right">
+            <div class="section-head">
+              <span class="section-tag">05 — Education</span>
+              <h2 class="section-title">Academic <span class="gradient-text">Background</span></h2>
+            </div>
+            <article class="edu-card glass-card gradient-border">
+              <div class="edu-icon">🎓</div>
+              <h3>Bachelor of Technology</h3>
+              <p class="edu-degree">Computer Science Engineering</p>
+              <p class="edu-meta">Graduate · DevOps & Cloud focus</p>
+            </article>
+          </div>
+          <div class="edu-block" data-aos="fade-left">
+            <div class="section-head">
+              <span class="section-tag">06 — Certifications</span>
+              <h2 class="section-title">Verified <span class="gradient-text">Skills</span></h2>
+            </div>
+            <div class="cert-grid">
+              <article class="cert-card glass-card gradient-border glow-card">
+                <div class="cert-badge">Cisco</div>
+                <h3>CCNA</h3>
+                <p>Networking fundamentals, routing & switching</p>
+              </article>
+              <article class="cert-card glass-card gradient-border glow-card">
+                <div class="cert-badge">Red Hat</div>
+                <h3>Red Hat Linux</h3>
+                <p>Enterprise Linux administration</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-dark">
+      <div class="container">
+        <div class="section-head center" data-aos="fade-up">
+          <span class="section-tag">07 — Contact</span>
+          <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info" data-aos="fade-right">
+            <div class="contact-item glass-card">
+              <span class="contact-label">Email</span>
+              <a href="mailto:your@email.com">your@email.com</a>
+            </div>
+            <div class="contact-item glass-card">
+              <span class="contact-label">Phone</span>
+              <a href="tel:+91xxxxxxxxxx">+91 xxxxxxxxxx</a>
+            </div>
+            <div class="contact-item glass-card">
+              <span class="contact-label">Location</span>
+              <p>Thrissur, Kerala, India</p>
+            </div>
+            <div class="social-links">
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-btn glass-card magnetic glow-btn" data-strength="0.3" aria-label="GitHub">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+              <a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer" class="social-btn glass-card magnetic glow-btn" data-strength="0.3" aria-label="LinkedIn">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 4.126 0 2.063 2.063 0 0 1-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+          <form class="contact-form glass-card gradient-border" id="contact-form" data-aos="fade-left">
+            <h3>Send a message</h3>
+            <div class="form-row">
+              <label>
+                <span>Name</span>
+                <input type="text" name="name" placeholder="Your name" required>
+              </label>
+              <label>
+                <span>Email</span>
+                <input type="email" name="email" placeholder="you@email.com" required>
+              </label>
+            </div>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" placeholder="Hello AMANN, I'd like to connect about..." required></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary magnetic glow-btn full-width" data-strength="0.35">
+              Send Message
+            </button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Made with <span class="heart">❤️</span> by <span class="gradient-text">AMANN PRAKASH</span></p>
+      <p class="footer-copy">&copy; <span id="year"></span> All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
